@@ -1,0 +1,153 @@
+* {
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
+/*top*/
+
+body,
+.container {
+    background-image: url(./imgs/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    background-color: #f2d6bd;
+}
+
+.top {
+    padding: 20px;
+    background-color: #f2d6bd;
+    display: flex;
+}
+
+.empty {
+    background-color: #8fcbd9;
+    padding: 0.2% 800px;
+}
+
+a {
+    text-decoration: none;
+    color: #6393a6;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 20%;
+    top: 8px;
+    font-size: 50px;
+}
+
+a:hover {
+    color: #8FCBD9;
+    transition: 0.5s;
+}
+
+ion-icon {
+    position: relative;
+    font-size: 70px;
+    left: 17%;
+}
+
+ion-icon:hover {
+    color: #8FCBD9;
+    transition: 0.5s;
+}
+
+.container {
+    display: flex;
+}
+
+
+/*LEFT SIDE*/
+
+.leftside {
+    padding: 130px;
+    display: grid;
+    grid-template-columns: unset;
+    border: 2px solid #6393A6;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 30px #8FCBD9;
+}
+
+input {
+    margin-top: 5%;
+    padding: 20px 50px;
+    border-color: #6393A6;
+    box-shadow: 2px 3px 15px #8FCBD9;
+    border-radius: 5px;
+}
+
+.amigos-add {
+    padding: 30px 135px;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #6393A6;
+    box-shadow: 2px 3px 15px #8FCBD9;
+}
+
+button {
+    margin-top: 13%;
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 3px 15px #8FCBD9;
+    cursor: pointer;
+}
+
+button:hover {
+    padding: 9px 26px;
+    transition: 0.5s;
+    background-color: #f2d6bd;
+}
+
+p {
+    font-size: 18px;
+}
+
+.amigos {
+    margin-top: 10%;
+}
+
+.add {
+    background-color: #8FCBD9;
+}
+
+.sorteio {
+    background-color: #6393A6;
+}
+
+.reiniciar {
+    background-color: #637f91;
+}
+
+
+/*RIGHTSIDE*/
+
+.rightside {
+    padding: 130px 190px;
+    border: 2px solid #6393A6;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 30px #8FCBD9;
+}
+
+h2 {
+    font-size: 40px;
+    margin-left: 24%;
+}
+
+.results {
+    padding: 80px 115px;
+    border: 2px solid #6393A6;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 30px #8FCBD9;
+}
