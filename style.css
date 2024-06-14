@@ -15,17 +15,17 @@ body,
 }
 
 div {
-    background-color: #f2d6bd;
+    background-color: #B477F2;
 }
 
 .top {
     padding: 20px;
-    background-color: #f2d6bd;
+    background-color: #B477F2;
     display: flex;
 }
 
 .empty {
-    background-color: #8fcbd9;
+    background-color: #331673;
     padding: 0.2% 800px;
 }
 
@@ -44,7 +44,7 @@ h1 {
 }
 
 a:hover {
-    color: #8FCBD9;
+    color: #331673;
     transition: 0.5s;
 }
 
@@ -55,12 +55,18 @@ ion-icon {
 }
 
 ion-icon:hover {
-    color: #8FCBD9;
+    color: #331673;
     transition: 0.5s;
 }
 
 .container {
     display: flex;
+}
+
+.mensagem-erro {
+    display: block;
+    color: red;
+    font-style: italic;
 }
 
 
@@ -73,24 +79,30 @@ ion-icon:hover {
     border: 2px solid #6393A6;
     margin-top: 5%;
     border-radius: 10px;
-    box-shadow: 2px 3px 30px #8FCBD9;
+    box-shadow: 2px 3px 30px #0B0726;
 }
 
 input {
     margin-top: 5%;
     padding: 20px 50px;
-    border-color: #6393A6;
-    box-shadow: 2px 3px 15px #8FCBD9;
+    border-color: #331673;
+    box-shadow: 2px 3px 15px #0B0726;
     border-radius: 5px;
 }
 
 .amigos-add {
-    padding: 30px 135px;
+    padding: 20px 125px;
     margin-top: 5%;
     background-color: white;
     border-radius: 5px;
-    border: 2px solid #6393A6;
-    box-shadow: 2px 3px 15px #8FCBD9;
+    border: 2px solid #331673;
+    box-shadow: 2px 3px 15px #0B0726;
+}
+
+.buttons {
+    background-color: transparent;
+    max-width: 80%;
+    max-height: 10%;
 }
 
 button {
@@ -98,14 +110,14 @@ button {
     padding: 6px 20px;
     border-radius: 10px;
     border: none;
-    box-shadow: 6px 3px 15px #8FCBD9;
+    box-shadow: 6px 3px 15px #0B0726;
     cursor: pointer;
 }
 
 button:hover {
     padding: 9px 26px;
     transition: 0.5s;
-    background-color: #f2d6bd;
+    background-color: #B477F2;
 }
 
 p {
@@ -117,15 +129,15 @@ p {
 }
 
 .add {
-    background-color: #8FCBD9;
+    background-color: #5C41BF;
 }
 
 .sorteio {
-    background-color: #6393A6;
+    background-color: #410ead;
 }
 
 .reiniciar {
-    background-color: #637f91;
+    background-color: #675b96;
 }
 
 
@@ -136,7 +148,7 @@ p {
     border: 2px solid #6393A6;
     margin-top: 5%;
     border-radius: 10px;
-    box-shadow: 2px 3px 30px #8FCBD9;
+    box-shadow: 2px 3px 30px #0B0726;
 }
 
 h2 {
@@ -145,9 +157,10 @@ h2 {
 }
 
 .results {
+    background-color: white;
     padding: 80px 115px;
-    border: 2px solid #6393A6;
+    border: 2px solid #331673;
     margin-top: 10%;
     border-radius: 10px;
-    box-shadow: 2px 3px 30px #8FCBD9;
+    box-shadow: 2px 3px 30px #0B0726;
 }
