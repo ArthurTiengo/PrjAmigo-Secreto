@@ -26,7 +26,7 @@ div {
 
 .empty {
     background-color: #331673;
-    padding: 0.2% 800px;
+    padding: 0.2% 790px;
 }
 
 a {
@@ -78,6 +78,7 @@ ion-icon:hover {
     grid-template-columns: unset;
     border: 2px solid #6393A6;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 10px;
     box-shadow: 2px 3px 30px #0B0726;
 }
@@ -115,7 +116,7 @@ button {
 }
 
 button:hover {
-    padding: 9px 26px;
+    padding: 7px 20px;
     transition: 0.5s;
     background-color: #B477F2;
 }
@@ -147,6 +148,7 @@ p {
     padding: 130px 190px;
     border: 2px solid #6393A6;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 10px;
     box-shadow: 2px 3px 30px #0B0726;
 }
