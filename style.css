@@ -1,37 +1,60 @@
 * {
     padding: 0 auto;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-
-/*top*/
-
-body,
-.container {
+body{
     background-image: url(./imgs/galaxy.jpg);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-div {
-    background-color: #B477F2;
 }
 
 .top {
     padding: 20px;
     background-color: #B477F2;
     display: flex;
+    border-bottom: #0F1C30 8px solid;
+}
+
+ion-icon {
+    position: relative;
+    font-size: 70px;
+    left: 17%;
+}
+
+a:hover,
+ion-icon:hover {
+    color: #026773;
+    transition: 0.5s;
 }
 
 .empty {
-    background-color: #331673;
-    padding: 0.2% 790px;
+    background-color: #5411e6;
+    height: 8px;
 }
+
+/*TUDO*/
+
+.container {
+    display: flex;
+}
+
+.leftside,
+.rightside {
+    background-color: #B477F2;
+}
+
+
+p {
+    font-size: 18px;
+    padding: 18px;
+}
+
 
 a {
     text-decoration: none;
-    color: #6393a6;
+    color: #012E40;
 }
 
 h1 {
@@ -43,42 +66,21 @@ h1 {
     font-size: 50px;
 }
 
-a:hover {
-    color: #331673;
-    transition: 0.5s;
-}
-
-ion-icon {
-    position: relative;
-    font-size: 70px;
-    left: 17%;
-}
-
-ion-icon:hover {
-    color: #331673;
-    transition: 0.5s;
-}
-
-.container {
-    display: flex;
-}
-
 .mensagem-erro {
-    display: block;
-    color: red;
-    font-style: italic;
+    display: flex;
+    margin-top: 30px;
+    color: rgb(109, 0, 103);
 }
 
 
 /*LEFT SIDE*/
 
 .leftside {
-    padding: 130px;
-    display: grid;
-    grid-template-columns: unset;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
     border: 2px solid #6393A6;
     margin-top: 5%;
-    margin-bottom: 5%;
     border-radius: 10px;
     box-shadow: 2px 3px 30px #0B0726;
 }
@@ -86,14 +88,15 @@ ion-icon:hover {
 input {
     margin-top: 5%;
     padding: 20px 50px;
+    display: flex;
+    width: 40%;
     border-color: #331673;
     box-shadow: 2px 3px 15px #0B0726;
     border-radius: 5px;
 }
 
 .amigos-add {
-    padding: 20px 125px;
-    margin-top: 5%;
+    padding: 10px;
     background-color: white;
     border-radius: 5px;
     border: 2px solid #331673;
@@ -101,29 +104,30 @@ input {
 }
 
 .buttons {
-    background-color: transparent;
-    max-width: 80%;
-    max-height: 10%;
+    margin-top: 30px;
+    display: flex;
 }
 
 button {
-    margin-top: 13%;
-    padding: 6px 20px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     box-shadow: 6px 3px 15px #0B0726;
     cursor: pointer;
+    transition: all 0.5s ease;
+    color: rgb(218, 218, 218);
 }
 
+
+
 button:hover {
-    padding: 7px 20px;
-    transition: 0.5s;
+    color: black;
+    transform: scale(1.2);
     background-color: #B477F2;
 }
 
-p {
-    font-size: 18px;
-}
+
 
 .amigos {
     margin-top: 10%;
@@ -145,10 +149,11 @@ p {
 /*RIGHTSIDE*/
 
 .rightside {
-    padding: 130px 190px;
+    width: 35%;
     border: 2px solid #6393A6;
     margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     box-shadow: 2px 3px 30px #0B0726;
 }
@@ -165,4 +170,36 @@ h2 {
     margin-top: 10%;
     border-radius: 10px;
     box-shadow: 2px 3px 30px #0B0726;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+    font: bolder;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width:600px) {
+    :root{
+        font-size: 40%;
+    }
+    .top i{
+        display: none;
+    }
+    .container{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sorteio,
+    .results{
+        width: 80vw;
+        padding: 24px 0;
+        min-height: 30vh;
+    }
+    .results{
+        min-height: 16vh;
+    }
 }
